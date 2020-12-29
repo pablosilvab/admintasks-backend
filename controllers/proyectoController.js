@@ -6,6 +6,10 @@ const jwt = require("jsonwebtoken");
 exports.crearProyecto = async (req, res) => {
   try {
     const proyecto = new Proyecto(req.body);
+
+    // jwt
+    proyecto.creador = req.usuario.id
+
     proyecto.save();
     res.status(201).json({
       msg: "Proyecto ingresado correctamente",

@@ -38,7 +38,7 @@ exports.crearUsuario = async (req, res) => {
 
     jwt.sign(
       payload,
-      process.env.TOKEN,
+      process.env.SECRET,
       {
         expiresIn: 3600,
       },
