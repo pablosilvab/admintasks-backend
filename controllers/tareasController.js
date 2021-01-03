@@ -70,8 +70,8 @@ exports.actualizarTarea = async (req, res) => {
     }
 
     const nuevaTarea = {};
-    if (nombre) nuevaTarea.nombre = nombre;
-    if (estado) nuevaTarea.estado = estado;
+    nuevaTarea.nombre = nombre;
+    nuevaTarea.estado = estado;
 
     const tarea = await Tarea.findByIdAndUpdate(
       { _id: req.params.id },
