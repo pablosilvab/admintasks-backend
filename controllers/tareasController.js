@@ -38,7 +38,7 @@ exports.crearTarea = async (req, res) => {
 
 exports.obtenerTareas = async (req, res) => {
   try {
-    const { proyecto } = req.body;
+    const { proyecto } = req.query;
     const proyectoDB = await Proyecto.findById(proyecto);
     if (!proyectoDB) {
       return res.status(404).json({ msg: "Proyecto no existe" });
