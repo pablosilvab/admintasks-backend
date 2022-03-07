@@ -5,7 +5,7 @@ API desarrollada en NodeJS cuyo objetivo es administar tareas y proyectos cuyos 
 ### Pre-requisitos 📋
 
 * NodeJS 
-* npn 
+* npm
 
 ### Instalación 🔧
 
