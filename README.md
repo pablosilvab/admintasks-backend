@@ -6,6 +6,7 @@ API desarrollada en NodeJS cuyo objetivo es administar tareas y proyectos cuyos 
 
 * NodeJS 
 * npm
+* MongoDB (para desarrollo local con Docker, para producción hay instancia Cloud)
 
 ### Instalación 🔧
 
@@ -20,3 +21,11 @@ Ejecutar proyecto con el siguiente comando.
 ```
 npm run dev
 ```
+
+### Help
+
+```
+docker-compose exec mongodb /bin/sh
+```
+
+Configurar variable de ambiente DB_MONGO.
