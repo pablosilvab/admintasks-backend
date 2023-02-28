@@ -1,22 +1,25 @@
 # AdminTasks Backend
 
-API desarrollada en NodeJS cuyo objetivo es administar tareas y proyectos cuyos registros se almacenan en una base de datos MongoDB.
+API developed in NodeJs. The objective is manage projects and tasks.
 
-### Pre-requisitos 📋
+### Requirements 📋
 
 * NodeJS 
 * npm
-* MongoDB (para desarrollo local con Docker, para producción hay instancia Cloud)
+* MongoDB (for local development I use Docker, for Cloud I use Mongo Atlas)
 
-### Instalación 🔧
+### Installation 🔧
 
-Clonar el proyecto e instalar sus dependencias.
+1. Clone the project
+2. Install the dependencies.
 
 ```
 npm install
 ```
 
-Ejecutar proyecto con el siguiente comando.
+3. Make sure you have a MongoDB instance.
+4. Configure environment variables for MongoDB and JWT.
+5. Run application 
 
 ```
 npm run dev
@@ -24,8 +27,7 @@ npm run dev
 
 ### Help
 
+
 ```
 docker-compose exec mongodb /bin/sh
 ```
-
-Configurar variable de ambiente DB_MONGO.
